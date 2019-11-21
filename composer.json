@@ -1,0 +1,30 @@
+{
+	"name": "ang3/php-pdf",
+	"type": "library",
+	"homepage": "https://github.com/Ang3/php-pdf",
+	"description": "PHP PDF component",
+    "license": "MIT",
+	"authors": [
+		{
+			"name": "Joanis ROUANET",
+			"email": "joanis.ang3@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {"Ang3\\Component\\Pdf\\": "src/"}
+	},
+	"autoload-dev": {
+		"psr-4": { "Ang3\\Component\\Pdf\\Tests\\": "tests/" }
+	},
+    "require": {
+    	"php": "^7.1",
+		"symfony/console": "^4.0",
+		"symfony/filesystem": "^4.0",
+		"symfony/process": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+		"symfony/var-dumper": "^4.3",
+		"symfony/phpunit-bridge": "^4.3"
+    }
+}
