@@ -10,11 +10,6 @@ This component helps you to generate and merge PDF's.
 
 ## Requirements
 
-- Google Chrome
-- pdfunite
-
-## Installation
-
 ### Google chrome
 
 Install Google Chrome on your server.
@@ -33,7 +28,7 @@ $ sudo apt-get install google-chrome-stable
 
 See http://manpages.ubuntu.com/manpages/bionic/man1/pdfunite.1.html
 
-### Composer
+## Installation
 
 You can install the component in 2 different ways:
 
