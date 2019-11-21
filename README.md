@@ -59,7 +59,7 @@ $parameters = [
 $factory = new PdfFactory($parameters = []);
 ```
 
-### Generate PDF file
+### Generating PDF files
 
 The parameter ```chrome_path``` is used to generate the PDF.
 
@@ -89,9 +89,9 @@ $file = $factory->createFromUrl('<content_url>', '<target_file>', $output);
 
 Both methods return the generated filename.
 
-### Merge PDF files
+### Merging PDF files
 
-The parameter ```pdfunite_path``` is used to merge PDF.
+The parameter ```pdfunite_path``` is used to merge PDF files.
 
 ```php
 <?php
