@@ -66,17 +66,24 @@ The parameter ```chrome_path``` is used to generate the PDF.
 ```php
 <?php
 
+// Create the factory
 // ...
 
-// You can your output to the factory
+/**
+ * You can pass an output to the factory
+ * 
+ * @var Symfony\Component\Console\Output\OutputInterface|null
+ */
 $output = null;
 
-// Create a PDF from a content
+// Generate the PDF from content as temporary file
 $file = $factory->createFromContent('Hello world!'); // temp file
+// Of generate the PDF with specific target filename (optional output)
 $file = $factory->createFromContent('Hello world!', '<target_file>', $output);
 
-// Create a PDF from a URL
+// Generate the PDF from URL as temporary file
 $file = $factory->createFromUrl('<content_url>'); // temp file
+// Of generate the PDF with specific target filename (optional output)
 $file = $factory->createFromUrl('<content_url>', '<target_file>', $output);
 ```
 
@@ -89,9 +96,14 @@ The parameter ```pdfunite_path``` is used to merge PDF.
 ```php
 <?php
 
+// Create the factory
 // ...
 
-// You can your output to the factory
+/**
+ * You can pass an output to the factory
+ * 
+ * @var Symfony\Component\Console\Output\OutputInterface|null
+ */
 $output = null;
 
 // Create and get the merged PDF filename
