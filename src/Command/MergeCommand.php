@@ -75,5 +75,8 @@ class MergeCommand extends Command
 
             return 1;
         }
+
+        // Retour ok
+        return 0;
     }
 }
